@@ -128,7 +128,7 @@ function handleChatResponse(userMessage) {
   userData.message = userMessage;
 
   const userChatHtml = `<div class="user-chat-box">
-    <img src="img/user.png" alt="User " width="8%">
+    <img src="user.png" alt="User " width="8%">
     <div class="user-chat-area">${userMessage}</div>
   </div>`;
 
@@ -137,9 +137,9 @@ function handleChatResponse(userMessage) {
 
   setTimeout(() => {
     const aiChatHtml = `<div class="ai-chat-box">
-      <img src=" img/ai.png" alt="AI" width="10%">
+      <img src=" ai.png" alt="AI" width="10%">
       <div class="ai-chat-area">
-        <img src="img/loading.webp" alt="Loading" class="load" width="50px">
+        <img src="loading.webp" alt="Loading" class="load" width="50px">
       </div>
     </div>`;
 
@@ -161,7 +161,7 @@ function createChatBox(html, classes) {
 
 // Function to Reset Image Selection
 function resetImage() {
-  domElements.image.src = `img/img.svg`;
+  domElements.image.src = `img.svg`;
   domElements.image.classList.remove("choose");
   userData.file = { mime_type: null, data: null };
 }
